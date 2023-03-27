@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "TT Common Bold";
+  src: url("fonts/FontsFree-Net-TTCommons-Bold.ttf");
+}
+@keyframes flip-flap {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(16px);
+  }
+}
+* {
+  font-family: "TT Common Bold" !important;
+  font-weight: bolder;
+  transition-duration: 0.3s ease;
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.upper-nav {
+  width: 100%;
+  background-color: #1b1834;
+  color: white;
+  position: relative;
+}
+.upper-nav div {
+  display: flex;
+  justify-content: right;
+  margin: 0px 50px;
+}
+.upper-nav div ul {
+  padding: 0px 50px;
+  font-size: smaller;
+}
+.upper-nav div ul li {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  display: inline-flex;
+  white-space: nowrap;
+}
+.upper-nav div ul li span {
+  margin: 0px 10px;
+  padding-top: 5px;
+}
+.upper-nav div ul hr {
+  background-color: grey;
+  padding: 10px 0.5px;
+}
+
+.lower-nav {
+  display: flex;
+  padding: 2px 0px;
+  background-color: #242145;
+  color: #fff;
+  min-width: 100%;
+  max-width: 100% !important;
+}
+.lower-nav div {
+  margin: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.lower-nav div .logo-box {
+  padding: 20px 0px;
+  width: 9%;
+}
+.lower-nav div .logo-box span {
+  width: fit-content;
+  margin-left: 25px;
+}
+.lower-nav div .nav-links {
+  list-style: none;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.lower-nav div .nav-links .links li {
+  padding: 15px 20px;
+  width: 100%;
+  white-space: nowrap;
+}
+.lower-nav div .nav-links .nav-actions {
+  display: flex;
+  justify-content: space-around;
+}
+.lower-nav div .nav-links .nav-actions li {
+  margin: 0;
+  padding: 0px 15px;
+}
+.lower-nav div .nav-links .nav-actions li .sales-btn,
+.lower-nav div .nav-links .nav-actions li .plans-btn {
+  padding: 12.5px 35px;
+  border-radius: 24px;
+  white-space: nowrap;
+  color: whitesmoke;
+}
+.lower-nav div .nav-links .nav-actions li .sales-btn {
+  border: 2px solid #585fa2;
+  background-color: transparent;
+}
+.lower-nav div .nav-links .nav-actions li .sales-btn:hover {
+  background-color: #585fa2;
+  transition: background-color 0.5s ease;
+}
+.lower-nav div .nav-links .nav-actions li .plans-btn {
+  background-color: #e7005e;
+  border: 1px solid #e7005e;
+}
+.lower-nav div .nav-links .nav-actions li .plans-btn:hover {
+  background-color: #eb2676;
+  transition: background-color 0.5s ease;
+}
+
+.banner {
+  width: 100%;
+  background: radial-gradient(39.56% 48.29% at 20% 115.78%, #FF1675 0%, rgba(255, 22, 121, 0) 100%), radial-gradient(54.23% 74.52% at 69.72% -10.08%, #FF1675 0%, rgba(255, 22, 121, 0) 100%), radial-gradient(21.67% 31.7% at 39.72% 107.79%, rgba(74, 51, 209, 0.8) 0%, rgba(74, 51, 209, 0) 100%), radial-gradient(40.08% 51.33% at 85.83% 24.14%, rgba(74, 51, 209, 0.8) 0%, rgba(74, 51, 209, 0) 100%), #242145;
+  padding: 20px 0px;
+  padding-bottom: 45px;
+}
+.banner .shadow-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid none;
+  border-radius: 18px;
+  margin: 0px 100px;
+}
+.banner .shadow-box .banner-txt-box {
+  padding: 45px 0px;
+  margin-top: 40px;
+  color: #fff;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(1) {
+  font-size: 55px;
+  text-align: center;
+  margin: auto 20%;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(2) {
+  font-size: 15px;
+  text-align: center;
+  text-justify: auto;
+  margin: auto 20%;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(2) p {
+  margin: auto 20%;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(3) {
+  text-align: center;
+  margin-top: 25px;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(3) button {
+  margin: auto 10px;
+  padding: 15px 25px;
+  background-color: #e7005e;
+  border: 1px solid #e7005e;
+  border-radius: 24px;
+  color: #fff;
+}
+.banner .shadow-box .banner-txt-box div:nth-child(3) button:hover {
+  background-color: #eb2676;
+  transition: background-color 0.5s ease;
+}
+.banner .shadow-box .banner-img .img-box {
+  display: flex;
+  justify-content: space-around;
+}
+.banner .shadow-box .banner-img .img-box div .anims img:nth-child(1) {
+  position: absolute;
+  top: 75%;
+  animation: flip-flap 2s alternate 0s infinite;
+}
+.banner .shadow-box .banner-img .img-box div .anims img:nth-child(2) {
+  position: absolute;
+  top: 90%;
+  animation: flip-flap 2s alternate 0s infinite;
+}
+.banner .shadow-box .banner-img .img-box div .anims img:nth-child(3) {
+  position: absolute;
+  opacity: 0;
+  top: 80%;
+  left: 25%;
+  animation: flip-flap 2s alternate-reverse 0s infinite;
+}
+.banner .shadow-box .banner-img .img-box div .animes img:nth-child(1) {
+  position: absolute;
+  top: 80%;
+  animation: flip-flap 2s alternate-reverse 0s infinite;
+}
+.banner .shadow-box .banner-img .img-box div .animes img:nth-child(2) {
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  animation: flip-flap 2s alternate 0s infinite;
+}
+.banner .shadow-box .banner-img .img-box div .animes img:nth-child(3) {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+  animation: flip-flap 2s alternate 0s infinite;
+}
+.banner .partners {
+  margin: 25px 0px;
+  padding-top: 20px;
+}
+.banner .partners h4 {
+  text-align: center;
+  color: #fff;
+}
+.banner .partners .partners-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px;
+  margin: 50px 175px;
+}
+.banner .partners .partners-logo div {
+  margin: 0px 25px;
+  text-align: center;
+}
+.banner .partners .partners-logo div img {
+  width: 12rem;
+  height: 7vh;
+}
+.banner .partners .partners-logo div:nth-child(5) img {
+  width: 62px;
+  height: 7vh;
+}
